@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="5" name="GCTest(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="script.PurchaseItem">
+        <methods>
+          <include name="testPurshaseItem"/>
+          <include name="closeApplication"/>
+          <include name="openApplication"/>
+        </methods>
+      </class> <!-- script.PurchaseItem -->
+    </classes>
+  </test> <!-- GCTest(failed) -->
+  <test thread-count="5" name="FFTest(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="script.PurchaseItem">
+        <methods>
+          <include name="testPurshaseItem"/>
+          <include name="closeApplication"/>
+          <include name="openApplication"/>
+        </methods>
+      </class> <!-- script.PurchaseItem -->
+    </classes>
+  </test> <!-- FFTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

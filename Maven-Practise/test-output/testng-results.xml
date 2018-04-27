@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Title is matching with Login]]>
+    </line>
+    <line>
+      <![CDATA[Title is matching with My account]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="69166" started-at="2018-04-19T06:46:31Z" finished-at="2018-04-19T06:47:40Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="69166" started-at="2018-04-19T06:46:31Z" finished-at="2018-04-19T06:47:40Z">
+      <class name="script.WishListUpdate">
+        <test-method status="PASS" signature="openApplication()[pri:0, instance:script.WishListUpdate@481a15ff]" name="openApplication" is-config="true" duration-ms="27837" started-at="2018-04-19T06:46:31Z" finished-at="2018-04-19T06:46:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method status="FAIL" signature="testWishListUpdation()[pri:0, instance:script.WishListUpdate@481a15ff]" name="testWishListUpdation" duration-ms="39121" started-at="2018-04-19T06:46:59Z" finished-at="2018-04-19T06:47:38Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at org.openqa.selenium.interactions.Actions.<init>(Actions.java:44)
+at page.MyAccountPage.selectDress(MyAccountPage.java:34)
+at script.WishListUpdate.testWishListUpdation(WishListUpdate.java:34)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Title is matching with Login]]>
+            </line>
+            <line>
+              <![CDATA[Title is matching with My account]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testWishListUpdation -->
+        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:script.WishListUpdate@481a15ff]" name="closeApplication" is-config="true" duration-ms="2122" started-at="2018-04-19T06:47:38Z" finished-at="2018-04-19T06:47:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testWishListUpdation status=FAILURE method=WishListUpdate.testWishListUpdation()[pri:0, instance:script.WishListUpdate@481a15ff] output=Title is matching with Login]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- script.WishListUpdate -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
